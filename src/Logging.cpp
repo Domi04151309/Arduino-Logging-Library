@@ -81,7 +81,7 @@ void Log::println(uint8_t priority, String tag, String msg) {
 }
 
 String Log::getTime() {
-  uint8_t s = millis()/1000;
+  long s = millis()/1000;
   uint8_t m = 0;
   unsigned int h = 0;
   String s_str;
